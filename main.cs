@@ -29,12 +29,11 @@ class Program {
         Console.WriteLine("\n" + answer);
       }
 
-
+      
       // if the user chooses option 2
-      if (choice == "2")
+      else if (choice == "2")
       {
-        // Access the Ciao method in the cobj object to return a good bye message 
-        to be displayed
+        // Access the Ciao method in the cobj object to return a good bye message to be displayed
 
         var goodBi = cobj.Ciao();
 
@@ -45,6 +44,13 @@ class Program {
         break;
       }
 
+      
+      // if the user chooses an option that is not 1 or 2
+      else
+      {
+        // Explain to them that that is not a valid choice
+        Console.WriteLine("\n Sorry that is not a valid choice please try again");
+      }
 
     }
 }
